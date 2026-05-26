@@ -777,10 +777,14 @@ input,button,textarea,select{font-family:inherit}
       <div class="fg"><label class="fl">DNI</label><input class="fi" id="c-dni" inputmode="numeric"/></div>
       <div class="fg"><label class="fl">Teléfono</label><input class="fi" id="c-phone" type="tel" placeholder="3415xxxxxxx"/></div>
     </div>
+            <div class="fr2">
+                        <div class="fg"><label class="fl">Fecha de nacimiento</label><input class="fi" id="c-nacimiento" type="date"/></div>
+                        <div class="fg"><label class="fl">Email</label><input class="fi" id="c-email" type="email" placeholder="correo@ejemplo.com"/></div>
+            </div>
     </div>
     <div class="fr2">
       <!-- TIPO DE INGRESO -->
-    <div class="fg">
+    <div class="fg">h
       <label class="fl">Tipo de ingreso *</label>
       <div class="msel" id="c-tipo-ingreso" style="grid-template-columns:1fr 1fr">
         <button class="mopt sel" onclick="selM(this,'c-tipo-ingreso');toggleCuotasField()" style="font-size:12px">✨<br/>Venta Nueva</button>
@@ -818,7 +822,7 @@ input,button,textarea,select{font-family:inherit}
       </div>
       <div class="fg"><label class="fl">Monto $/mes *</label><input class="fi" id="c-amount" inputmode="decimal" oninput="cUpdateComision()"/></div>
     </div>
-    <div class="fr2">
+    <div class="fr2" style="grid-template-columns:80px 1fr">
       <div class="fg"><label class="fl">Cápitas</label><input class="fi" id="c-capitas" inputmode="numeric" placeholder="1"/></div>
       <div class="fg">
         <label class="fl">Fecha de alta *</label>
